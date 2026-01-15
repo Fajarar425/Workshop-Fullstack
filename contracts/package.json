@@ -20,8 +20,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-  },
+  "compile": "hardhat compile",
+  "test": "hardhat test",
+  "deploy": "hardhat run scripts/deploy.ts --network fuji"
+},
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^0.15.0",
     "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
@@ -34,6 +36,7 @@
     "@types/mocha": ">=9.1.0",
     "@types/node": ">=22.0.0",
     "chai": "^4.2.0",
+    "dotenv": "^17.2.3",
     "hardhat": "^2.14.0",
     "hardhat-gas-reporter": "^2.3.0",
     "solidity-coverage": "^0.8.0",

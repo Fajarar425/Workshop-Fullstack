@@ -1,0 +1,103 @@
+/* Global */
+body {
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #0d0d1a, #1a1a2e);
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* untuk browser modern */
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6), 0 0 12px rgba(0, 0, 255, 0.6);
+}
+p {
+  color: #aaa;
+}
+
+/* Card */
+.card {
+  background: rgba(30, 30, 60, 0.85);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #444;
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.3);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Labels & Values */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffcc00;
+}
+.value {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #ffcc00, #ff8800);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #222;
+  box-shadow: 0 0 10px #ffcc00;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffaa33;
+}
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Status Colors */
+.success {
+  color: #00ff99;
+  font-weight: bold;
+}
+.error {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
